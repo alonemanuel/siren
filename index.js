@@ -1,5 +1,7 @@
 var body = document.getElementById('body');
-var info_beginning = document.getElementById('info_beginning');
+var info_beginning_0 = document.getElementById('info_beginning_0');
+var info_beginning_1 = document.getElementById('info_beginning_1');
+var choice_ceremony = document.getElementById('choice_ceremony');
 var choice_rat = document.getElementById("choice_rat");
 var choice_yes_rat = document.getElementById('choice_yes_rat');
 var choice_no_rat = document.getElementById('choice_no_rat');
@@ -17,12 +19,37 @@ var info_run_siren = document.getElementById('info_run_siren');
 var info_talk_siren = document.getElementById('info_talk_siren');
 
 
+var body_click_flag = 0;
+
 // var choice_yes_tell_sivan = document.getElementById('choice_yes_tell_sivan');
 // var info_no_tell_sivan = document.getElementById('info_no_tell_sivan');
 // var info_no_tell_sivan = document.getElementById('info_no_tell_sivan');
 
-info_beginning.style.display = "block";
-choice_rat.style.display = "inline";
+info_beginning_0.style.display = "block";
+choice_ceremony.style.display = "inline";
+
+// body.onclick = function () {
+//     if (!body_click_flag ) {
+//         body.style.background = "black";
+//         body.style.color = "#FFFFF8";
+//
+//
+//     } else {
+//         body.style.background = "#FFFFF8";
+//         body.style.color = "black";
+//
+//     }
+//     body_click_flag = 1 - body_click_flag;
+//
+// };
+
+
+choice_ceremony.onclick = function () {
+    choice_ceremony.style.fontWeight = "300";
+    choice_ceremony.style.display = "block"
+    info_beginning_1.style.display = "block";
+    choice_rat.style.display = "inline";
+};
 
 choice_no_rat.onclick = function () {
     // body.style.background = "red";

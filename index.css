@@ -50,6 +50,13 @@ p {
     color: navy;
 }
 
+.op2 {
+    display: inline-block;
+    /*float: right;*/
+    color: red;
+    width: 45%;
+}
+
 div.op0::before {
     display: inline;
     content: attr(title);
@@ -68,12 +75,26 @@ div.op1::before {
     visibility: hidden;
 }
 
+div.op2::before {
+    display: inline;
+    content: attr(title);
+    font-weight: 300;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
 div.op1:hover {
     font-weight: 300;
     display: inline;
 }
 
 div.op0:hover {
+    font-weight: 300;
+    display: inline;
+}
+
+div.op2:hover {
     font-weight: 300;
     display: inline;
 }
