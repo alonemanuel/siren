@@ -84,19 +84,26 @@ div.op2::before {
     visibility: hidden;
 }
 
+
 div.op1:hover {
     font-weight: 300;
     display: inline;
+    cursor: pointer;
+
 }
 
 div.op0:hover {
     font-weight: 300;
     display: inline;
+    cursor: pointer;
+
 }
 
 div.op2:hover {
     font-weight: 300;
     display: inline;
+    cursor: pointer;
+
 }
 
 @font-face {
