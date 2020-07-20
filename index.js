@@ -17,4 +17,28 @@ rat.onclick = function () {
     showElement("rat_info")
 };
 
-console.log("bla");
+
+function makeInvisible(elementId) {
+    document.getElementById(elementId).style.opacity = 0;
+}
+
+function makeVisibleOnHover(elementId) {
+    var elem = document.getElementById(elementId);
+    elem.onmouseover = function () {
+        elem.style.opacity = 1;
+
+
+    };
+
+}
+
+
+function onOpenSite() {
+    console.log("Site opened");
+    // showElement('info0')
+    // showElement("info1")
+    // makeInvisible("info1")
+    // makeVisibleOnHover("info1")
+}
+
+onOpenSite()
