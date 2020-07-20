@@ -1,7 +1,7 @@
 body {
     direction: rtl;
     font-family: NarkisTam, sans-serif;
-    background-color: black;
+    background-color: #FFFFF8;
     text-align: center;
     vertical-align: top;
     display: inline-block;
@@ -9,41 +9,49 @@ body {
     margin-right: 10%;
 }
 
-div.info {
-    color: white;
-    font-size: 60px;
+
+p {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+
+.info {
+    display: none;
+    font-size: 65px;
     font-weight: 300;
     opacity: 1;
     vertical-align: middle;
 }
 
-div.info:hover {
+.info:hover {
     opacity: 1;
 }
 
-div.choice {
-    color: crimson;
-    font-size: 50px;
+.choice {
+    display: none;
+    color: #FF6666;
+    font-size: 70px;
     font-weight: 100;
-    }
-
-
-
-div.op0 {
-    /*float: left;*/
-    /*display: inline;*/
-    color: red;
-    /*width: 45%;*/
 }
-/*div.op1 {*/
-/*    float: left;*/
-/*    display: inline;*/
-/*    width: 45%;*/
 
-/*}*/
+
+.op0 {
+    display: inline-block;
+    float: right;
+    color: red;
+    width: 45%;
+}
+
+.op1 {
+    float: left;
+    width: 45%;
+    display: inline-block;
+    color: navy;
+}
 
 div.op0::before {
-    /*display: block;*/
+    display: inline;
     content: attr(title);
     font-weight: 300;
     height: 0;
@@ -52,7 +60,7 @@ div.op0::before {
 }
 
 div.op1::before {
-    /*display: block;*/
+    display: inline;
     content: attr(title);
     font-weight: 300;
     height: 0;

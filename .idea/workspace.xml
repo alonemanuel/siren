@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="9b414e88-915e-44f2-8973-81bf05f3a6dd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +77,7 @@
       <updated>1595245892708</updated>
       <workItem from="1595245893962" duration="782000" />
       <workItem from="1595247009609" duration="5845000" />
-      <workItem from="1595256907136" duration="10866000" />
+      <workItem from="1595256907136" duration="17385000" />
     </task>
     <servers />
   </component>
@@ -87,10 +89,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="913" y="191" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1595256883439" />
-    <state x="941" y="350" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595259210797">
+    <state x="941" y="350" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595273972692">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="941" y="350" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1595259210797" />
+    <state x="941" y="350" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1595273972692" />
     <state x="812" y="198" key="run.anything.popup" timestamp="1595265796423">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
