@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Siren</title>
     <link href="index.css" rel="stylesheet"/>
+    <!--    <link href="index.js" rel="script"/>-->
 </head>
 
 
@@ -15,17 +16,6 @@
         <br>
         סיון בקשה שאשמור לה מקום.
     </p>
-</div>
-
-
-<div class="choice">
-    <p>
-    <div class="op0">
-        שמרתי לה מקום
-    </div>
-    <div class="op1">
-        לא שמרתי לה מקום
-    </div>
 </div>
 
 
@@ -50,15 +40,6 @@
     </p>
 </div>
 
-<div class="choice">
-    <div class="op0">
-        ניגשתי אל שולם
-    </div>
-    <div class="op1">
-        התעלמתי משולם
-    </div>
-</div>
-
 
 <div class="info">
     <p>
@@ -74,18 +55,6 @@
         אחרי הצהריים הייתי במכרז המסחרי
         אביב וצורי שהיו שם סיפרו לי ששרון עבר את הראיון
     </p>
-</div>
-
-<div class="choice">
-    <p>
-    <div class="op0">
-        אני במצב רוח מנומס
-    </div>
-    <div class="op1">
-        נמאס לי לשמוע על שרון
-    </div>
-    </p>
-
 </div>
 
 
@@ -110,17 +79,21 @@
 
 <div class="choice">
     <p>
-    <div class="op0">
-        שרון בטח יחזיר את האופניים
+    <div class="norat" id="no_rat">
+        <div class="op0">
+            שרון בטח יחזיר את האופניים
+        </div>
     </div>
-    <div class="op1">
-        כדאי לעזור לשולם
+    <div class="yes_rat" id="rat">
+        <div class="op1">
+            כדאי לעזור לשולם
+        </div>
     </div>
     </p>
 
 </div>
 
-<div class="info">
+<div class="info" id="rat_info" style="display: none">
     <p>
         חיכיתי שייכנסו לכיתות ואז הלכתי למנהל
         <br>
@@ -146,6 +119,12 @@
         <br>
         פחדתי כשהיא אמרה לי לאן לברוח
     </p>
+
+</div>
+
+<div class="info" id="no_rat_info" style="display: none">
+
+    לא הלשנתי
 
 </div>
 
@@ -201,4 +180,5 @@
 </div>
 
 </body>
+<script src="index.js" type="text/javascript"></script>
 </html>
