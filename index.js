@@ -6,18 +6,22 @@ var choice_rat = document.getElementById("choice_rat");
 var choice_yes_rat = document.getElementById('choice_yes_rat');
 var choice_no_rat = document.getElementById('choice_no_rat');
 var info_no_rat = document.getElementById('info_no_rat');
-var info_yes_rat = document.getElementById('info_yes_rat');
+var info_yes_rat_0 = document.getElementById('info_yes_rat_0');
+var info_yes_rat_1 = document.getElementById('info_yes_rat_1');
 var choice_tell_sivan = document.getElementById('choice_tell_sivan');
 var choice_siren = document.getElementById('choice_siren');
 var choice_no_tell_sivan = document.getElementById('choice_no_tell_sivan');
+
 var choice_yes_tell_sivan = document.getElementById('choice_yes_tell_sivan');
-var info_no_tell_sivan = document.getElementById('info_no_tell_sivan');
+var info_no_tell_sivan_0 = document.getElementById('info_no_tell_sivan_0');
+var info_no_tell_sivan_1 = document.getElementById('info_no_tell_sivan_1');
 var info_yes_tell_sivan = document.getElementById('info_yes_tell_sivan');
+var choice_scared = document.getElementById('choice_scared');
 var choice_run_siren = document.getElementById('choice_run_siren');
 var choice_talk_siren = document.getElementById('choice_talk_siren');
 var info_run_siren = document.getElementById('info_run_siren');
 var info_talk_siren = document.getElementById('info_talk_siren');
-
+var choice_esacpe = document.getElementById('choice_escape');
 
 var body_click_flag = 0;
 
@@ -66,10 +70,19 @@ choice_yes_rat.onclick = function () {
     // body.style.color = "white";
     choice_yes_rat.style.fontWeight = "300";
     choice_no_rat.style.visibility = "hidden";
-    choice_yes_rat.style.display = "block"
-    info_yes_rat.style.display = "block";
+    choice_yes_rat.style.display = "block";
+    info_yes_rat_0.style.display = "block";
+    choice_esacpe.style.display = "inline";
+};
+
+choice_esacpe.onclick = function () {
+    choice_esacpe.style.fontWeight = "300";
+    choice_esacpe.style.display = "block"
+    info_yes_rat_1.style.display = "block";
+
     choice_siren.style.display = "inline";
 };
+
 
 choice_no_tell_sivan.onclick = function () {
     // body.style.background = "red";
@@ -77,7 +90,14 @@ choice_no_tell_sivan.onclick = function () {
     choice_no_tell_sivan.style.fontWeight = "300";
     choice_yes_tell_sivan.style.visibility = "hidden";
     choice_no_tell_sivan.style.display = "block"
-    info_no_tell_sivan.style.display = "block";
+    choice_scared.style.display = "inline";
+    info_no_tell_sivan_0.style.display = "block";
+};
+
+choice_scared.onclick = function () {
+    choice_scared.style.fontWeight = "300";
+    choice_scared.style.display = "block";
+    info_no_tell_sivan_1.style.display = "block";
 };
 
 

@@ -9,6 +9,16 @@ body {
     margin-right: 10%;
 }
 
+.header {
+    font-family: NarkisTam, sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: black;
+}
+
+.subheader {
+    color: #FF6666;
+}
 
 p {
     margin-top: 2em;
