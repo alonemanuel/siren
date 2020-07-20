@@ -1,0 +1,68 @@
+body {
+    direction: rtl;
+    font-family: NarkisTam, sans-serif;
+    background-color: black;
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;
+}
+
+div.info {
+    color: white;
+    font-size: 60px;
+    font-weight: 300;
+}
+
+div.choice {
+    color: crimson;
+    font-size: 50px;
+    font-weight: 100;
+}
+
+
+div.op0::before {
+    /*display: block;*/
+    content: attr(title);
+    font-weight: 300;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+div.op1::before {
+    /*display: block;*/
+    content: attr(title);
+    font-weight: 300;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+div.op1:hover {
+    font-weight: 300;
+    display: inline;
+}
+
+div.op0:hover {
+    font-weight: 300;
+    display: inline;
+}
+
+@font-face {
+    font-family: NarkisTam;
+    src: url("./res/fonts/narkis_tam/narkis_tam_bold.otf");
+    font-weight: 300;
+}
+
+
+@font-face {
+    font-family: NarkisTam;
+    src: url("./res/fonts/narkis_tam/narkis_tam_regular.otf");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: NarkisTam;
+    src: url("./res/fonts/narkis_tam/narkis_tam_light.otf");
+    font-weight: 100;
+}
