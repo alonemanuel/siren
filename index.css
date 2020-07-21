@@ -116,6 +116,15 @@ div.op2:hover {
 
 }
 
+.backup {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+/*.backup:hover {*/
+/*    cursor: pointer;*/
+/*}*/
+
 hr {
     width: 50%;
     height: 3px;

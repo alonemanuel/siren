@@ -23,6 +23,11 @@ var info_run_siren = document.getElementById('info_run_siren');
 var info_talk_siren = document.getElementById('info_talk_siren');
 var choice_esacpe = document.getElementById('choice_escape');
 
+var up0 = document.getElementById('up0');
+var up1 = document.getElementById('up1');
+var up2 = document.getElementById('up2');
+var up3 = document.getElementById('up3');
+
 var body_click_flag = 0;
 
 // var choice_yes_tell_sivan = document.getElementById('choice_yes_tell_sivan');
@@ -81,6 +86,7 @@ choice_esacpe.onclick = function () {
     info_yes_rat_1.style.display = "block";
 
     choice_siren.style.display = "inline";
+    make_dark_mode();
 };
 
 
@@ -98,6 +104,7 @@ choice_scared.onclick = function () {
     choice_scared.style.fontWeight = "300";
     choice_scared.style.display = "block";
     info_no_tell_sivan_1.style.display = "block";
+    make_dark_mode()
 };
 
 
@@ -108,6 +115,7 @@ choice_yes_tell_sivan.onclick = function () {
     choice_no_tell_sivan.style.visibility = "hidden";
     choice_yes_tell_sivan.style.display = "block"
     info_yes_tell_sivan.style.display = "block";
+    make_blue_mode();
 };
 
 
@@ -150,6 +158,80 @@ function makeVisibleOnHover(elementId) {
 
     };
 
+}
+
+up0.onclick = function () {
+    reset_story();
+};
+up1.onclick = function () {
+    reset_story();
+};
+up2.onclick = function () {
+    reset_story();
+};
+up3.onclick = function () {
+    reset_story();
+};
+
+function make_dark_mode() {
+    body.style.background = "black";
+    body.style.color = "#FFFFF8";
+    let op1s = document.querySelectorAll(".op1");
+    for (let i = 0; i < op1s.length; i++) {
+        op1s[i].style.color = "yellow";
+    }
+
+    let hrs = document.querySelectorAll("hr");
+    for (let i = 0; i < hrs.length; i++) {
+        hrs[i].style.backgroundColor = "red";
+    }
+}
+
+function make_blue_mode() {
+    body.style.background = "navy";
+    body.style.color = "white";
+    let op1s = document.querySelectorAll(".op1");
+    for (let i = 0; i < op1s.length; i++) {
+        op1s[i].style.color = "yellow";
+    }
+
+    let hrs = document.querySelectorAll("hr");
+    for (let i = 0; i < hrs.length; i++) {
+        hrs[i].style.backgroundColor = "yellow";
+    }
+}
+
+
+
+function reset_story() {
+    true;
+}
+
+
+function reset_story2() {
+    let X = document.querySelectorAll(".info");
+    console.log(X.length);
+    for (let i = 0; i < X.length; i++) {
+        X[i].style.display = "none";
+    }
+    let op0s = document.querySelectorAll(".op0");
+    for (let i = 0; i < op0s.length; i++) {
+        op0s[i].style.display = "inline";
+        op0s[i].style.fontWeight = "100";
+
+    }
+    let op1s = document.querySelectorAll(".op1");
+    for (let i = 0; i < op1s.length; i++) {
+        op1s[i].style.display = "inline";
+        op1s[i].style.fontWeight = "100";
+    }
+    let Y = document.querySelectorAll(".choice");
+    for (let i = 0; i < Y.length; i++) {
+        Y[i].style.display = "none";
+    }
+    info_beginning_0.style.display = "block";
+    choice_ceremony.style.display = "inline";
+    window.scrollTo(top);
 }
 
 
