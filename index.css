@@ -116,6 +116,13 @@ div.op2:hover {
 
 }
 
+hr {
+    width: 50%;
+    height: 3px;
+    border-width: 0;
+    background-color: navy;
+}
+
 @font-face {
     font-family: NarkisTam;
     src: url("./res/fonts/narkis_tam/narkis_tam_bold.otf");
